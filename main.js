@@ -4,7 +4,12 @@ gsap.registerPlugin(ScrollTrigger)
 // Hero Animations
 const tl = gsap.timeline()
 
-tl.from("#hero-title", {
+tl.to(".logo", {
+  duration: 1,
+  opacity: 1,
+  ease: "power2.out"
+})
+.from("#hero-title", {
   duration: 1.5,
   y: 100,
   opacity: 0,
