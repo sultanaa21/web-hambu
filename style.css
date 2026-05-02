@@ -119,6 +119,25 @@ nav {
 }
 
 .btn-minimal {
+  display: inline-block;
+  padding: 1.2rem 3.5rem;
+  border: 1px solid var(--off-white);
+  color: var(--off-white);
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 0.85rem;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-minimal:hover {
+  background: var(--off-white);
+  color: var(--black);
+  transform: translateY(-5px);
+}
+
+.btn-submit {
   display: block;
   padding: 1.5rem 3.5rem;
   background: #FFB800 !important;
@@ -135,6 +154,11 @@ nav {
   position: relative;
   z-index: 999;
   box-shadow: 0 10px 30px rgba(255, 184, 0, 0.3);
+}
+
+.btn-submit:hover {
+  background: var(--off-white);
+  transform: translateY(-5px);
 }
 
 .contact-section {
