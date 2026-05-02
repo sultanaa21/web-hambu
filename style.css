@@ -129,6 +129,10 @@ nav {
   letter-spacing: 4px;
   font-size: 0.85rem;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  background: transparent;
+  width: fit-content;
+  margin-top: 2rem;
 }
 
 .btn-minimal:hover {
@@ -359,7 +363,7 @@ nav {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 3rem;
 }
 
 .form-group {
