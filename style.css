@@ -63,7 +63,7 @@ nav {
 .logo {
   font-size: 2.2rem;
   font-weight: 900;
-  color: var(--off-white);
+  color: var(--egg-yolk);
   opacity: 0; /* Invisible al principio para animarlo */
 }
 
