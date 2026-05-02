@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MELT. | CHEESE & CHARCOAL</title>
+</head>
+<body>
+    <!-- SVG Clip Path for Cheese Drip -->
+    <svg style="position: absolute; width: 0; height: 0;">
+        <defs>
+            <clipPath id="drip-clip" clipPathUnits="objectBoundingBox">
+                <path d="M0,0 H1 V0.6 C1,0.6,0.9,0.9,0.8,0.8 C0.7,0.7,0.65,1,0.55,0.95 C0.45,0.9,0.4,1,0.3,0.95 C0.2,0.9,0.15,0.8,0.1,0.85 C0.05,0.9,0,0.7,0,0.7 Z" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <div id="app">
+        <header>
+            <nav class="container">
+                <div class="logo">MELT.</div>
+                <ul class="nav-links">
+                    <li><a href="#menu">MENÚ</a></li>
+                    <li><a href="#about">NOSOTROS</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="cheese-drip-top"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-title">THE ART OF <br>MELTING.</h1>
+                    <p id="hero-desc">Sabor audaz envuelto en la perfección dorada del queso fundido. Una experiencia minimalista para paladares exigentes.</p>
+                    <a href="#menu" class="btn-minimal">EXPLORAR MENÚ</a>
+                </div>
+            </div>
+            
+            <div class="product-hero-container">
+                <img src="/fotos/sinfondo.png" alt="Signature Smash Burger" class="main-product" id="hero-img">
+                <div class="cheese-pool"></div>
+            </div>
+        </section>
+
+        <section class="section-padding" id="menu">
+            <div class="container">
+                <h2 class="section-title reveal">Nuestros Imprescindibles</h2>
+                <div class="menu-grid">
+                    <div class="menu-item reveal">
+                        <div class="item-content">
+                            <h3>MAX BURGER</h3>
+                            <p>Doble ternera smash, cheddar líquido envejecido y bacon ahumado.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-content">
+                            <h3>GOLD PIZZA</h3>
+                            <p>Masa de fermentación lenta, mozzarella di bufala y miel de trufa negra.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-content">
+                            <h3>TACO MELT</h3>
+                            <p>Tacos de carnitas con baño de yema de huevo y queso fundido artesanal.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <div class="item-content">
+                            <h3>CHEESE FRIES</h3>
+                            <p>Patatas de corte grueso triple cocción con cascada de queso fundido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="info">
+            <div class="about-section" id="about">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-content reveal">
+                            <h2>NOSOTROS.</h2>
+                            <p>En MELT., la textura es nuestra obsesión. Nacimos en el corazón de Barcelona con una misión clara: elevar la comida reconfortante a una forma de arte visual y sensorial.</p>
+                            <p>Cada ingrediente es seleccionado por su capacidad de fundirse y crear armonía. Utilizamos carbón vegetal para nuestras carnes y quesos de autor para nuestros baños dorados.</p>
+                            <p>No servimos platos, servimos momentos de placer fundido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-section" id="contact">
+                <div class="container">
+                    <h2 class="contact-title reveal">CONTACTO.</h2>
+                    <div class="contact-grid">
+                        <div class="contact-info reveal">
+                            <div class="contact-item">
+                                <h4>UBICACIÓN</h4>
+                                <p>Carrer de la Fusió 42, 08001 Barcelona</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h4>RESERVAS & PEDIDOS</h4>
+                                <p>+34 93 123 45 67</p>
+                                <p>hola@meltcheese.com</p>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <h4>HORARIO</h4>
+                                <p>L-D: 13:00 - 00:00</p>
+                            </div>
+                        </div>
+                        <div class="reveal">
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label>NOMBRE</label>
+                                    <input type="text" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>EMAIL</label>
+                                    <input type="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>MENSAJE</label>
+                                    <textarea rows="4" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-minimal">ENVIAR MENSAJE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>MELT. CHEESE & CHARCOAL &copy; 2026. TODOS LOS DERECHOS RESERVADOS.</p>
+                <div class="footer-links">
+                    <a href="#">POLÍTICA DE PRIVACIDAD</a>
+                    <a href="#">TÉRMINOS DE SERVICIO</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
