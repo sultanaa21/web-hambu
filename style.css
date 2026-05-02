@@ -475,7 +475,48 @@ footer p {
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .hero h1 { font-size: 6rem; }
-  .about-content h2 { font-size: 5rem; }
-  .contact-grid { grid-template-columns: 1fr; gap: 8rem; }
+  .hero h1 { font-size: 5.5rem; }
+  .about-content h2, .contact-title { font-size: 5rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 5rem; }
+  .menu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .container { padding: 0 1.5rem; }
+  
+  header { padding: 1.5rem 0; background: rgba(18, 18, 18, 0.95); }
+  .nav-links { display: none; } /* Ocultamos por simplicidad o podrías hacer un menú hamburguesa */
+  
+  .hero { 
+    flex-direction: column; 
+    text-align: center; 
+    padding-top: 100px;
+    justify-content: flex-start;
+  }
+  
+  .hero h1 { font-size: 3.5rem; line-height: 1; margin-bottom: 1.5rem; }
+  .hero p { margin: 0 auto 2.5rem; font-size: 1rem; }
+  
+  .product-hero-container {
+    position: relative;
+    right: 0;
+    top: 0;
+    transform: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .section-title { font-size: 3rem; }
+  .menu-grid { grid-template-columns: 1fr; }
+  
+  .about-content h2, .contact-title { font-size: 3.5rem; }
+  .about-content p { font-size: 1.2rem; }
+  
+  .contact-info p { font-size: 1.4rem; }
+  .contact-form { gap: 4rem; }
+  
+  .cheese-drip-top { height: 30vh; }
+  
+  footer { padding: 6rem 0 4rem; }
+  .footer-links { flex-direction: column; gap: 2rem; }
 }
