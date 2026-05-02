@@ -172,8 +172,8 @@ nav {
 .product-hero-container {
   position: absolute;
   right: 8%;
-  top: 45%;
-  transform: translateY(-40%);
+  top: 30%;
+  transform: translateY(-30%);
   z-index: 5;
   width: 35%;
   display: flex;
