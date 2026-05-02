@@ -84,3 +84,13 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scrolled')
   }
 })
+
+// Form Handling
+const form = document.querySelector('.contact-form');
+if (form) {
+  form.addEventListener('submit', function(e) {
+    const btn = form.querySelector('button');
+    btn.textContent = 'ENVIANDO...';
+    btn.style.opacity = '0.5';
+  });
+}
