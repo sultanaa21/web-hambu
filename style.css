@@ -119,25 +119,29 @@ nav {
 }
 
 .btn-minimal {
-  display: inline-block;
-  padding: 1.2rem 3.5rem;
-  background: var(--egg-yolk);
-  color: var(--black);
+  display: block;
+  padding: 1.5rem 3.5rem;
+  background: #FFB800 !important;
+  color: #000000 !important;
   border: none;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 1.1rem;
-  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 1.2rem;
   cursor: pointer;
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 3rem;
   font-family: 'Bebas Neue', sans-serif;
+  position: relative;
+  z-index: 999;
+  box-shadow: 0 10px 30px rgba(255, 184, 0, 0.3);
 }
 
-.btn-minimal:hover {
-  background: var(--off-white);
-  transform: translateY(-5px);
+.contact-section {
+  padding: 10rem 0 20rem 0 !important;
+  background: #000000;
+  position: relative;
+  z-index: 2;
 }
 
 /* Floating Product */
